@@ -4,7 +4,7 @@ import SellCard from "./components/SellCard/SellCard"
 import Pagenavigation from "./components/Pagenavigation/Pagenavigation"
 import "./globals.css"
 async function getProducts() {
-  let res = await fetch("http://localhost:3000/api/products")
+  let res = await fetch("http://e-commerce-web-dario/api/products")
   return res.json()
 }
 export default async function Home() {
