@@ -2,7 +2,7 @@
 import { Suspense } from "react"
 import Link from "next/link"
 async function getCategories() {
-    let res = await fetch("http://localhost:3000/api/categories")
+    let res = await fetch("http://e-commerce-web-dario/api/categories")
     return res.json()
 }
 export default async function Nav() {
