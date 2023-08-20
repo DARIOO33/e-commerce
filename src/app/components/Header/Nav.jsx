@@ -1,8 +1,6 @@
 // "use client"
 import { Suspense } from "react"
 import Link from "next/link"
-// import axios from "axios"
-// import { useState } from "react";
 async function getCategories() {
     let res = await fetch("http://localhost:3000/api/categories")
     return res.json()
