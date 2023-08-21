@@ -15,10 +15,7 @@ const categories = [
         id_cat: "4",
         name: "fashion",
     },
-    {
-        id_cat: "5",
-        name: "seg",
-    }
+
 ]
 export default function handler(req, res) {
     res.status(201).json(categories)
