@@ -1,6 +1,4 @@
 "use client"
-import { Suspense } from 'react'
-import Nav from './Nav'
 import './Header.css'
 import Link from 'next/link'
 import { AiOutlineSearch } from 'react-icons/ai'
