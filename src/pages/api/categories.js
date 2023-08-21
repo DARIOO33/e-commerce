@@ -17,7 +17,7 @@ const categories = [
     },
     {
         id_cat: "5",
-        name: "sex",
+        name: "seg",
     }
 ]
 export default function handler(req, res) {
