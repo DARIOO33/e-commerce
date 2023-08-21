@@ -1,4 +1,4 @@
-import Item from './items/Item.jsx'
+import Item from './Item.jsx'
 async function getCats() {
     let res = await fetch("http://localhost:3000/api/categories")
     return res.json()
