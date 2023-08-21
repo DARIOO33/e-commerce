@@ -1,6 +1,6 @@
 import Item from './Item.jsx'
 async function getCats() {
-    let res = await fetch("http://localhost:3000/api/categories")
+    let res = await fetch("http://localhost:3000/api/categories", { cache: 'no-store' })
     return res.json()
 }
 export default async function Categories() {
