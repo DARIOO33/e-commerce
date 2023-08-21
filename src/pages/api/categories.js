@@ -1,20 +1,24 @@
 const categories = [
     {
         id_cat: "1",
-        name: "electronics"
+        name: "electronics",
     },
     {
         id_cat: "2",
-        name: "sport"
+        name: "sport",
     },
     {
         id_cat: "3",
-        name: "decor"
+        name: "decor",
     },
     {
-        idcat: "4",
-        name: "fashion"
+        id_cat: "4",
+        name: "fashion",
     },
+    {
+        id_cat: "5",
+        name: "sex",
+    }
 ]
 export default function handler(req, res) {
     res.status(201).json(categories)

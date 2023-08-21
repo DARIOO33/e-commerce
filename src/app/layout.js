@@ -16,7 +16,7 @@ export default async function RootLayout({ children }) {
   let products = await getProducts()
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         <div className="home relative top-4 -z-1">
           <Dash />

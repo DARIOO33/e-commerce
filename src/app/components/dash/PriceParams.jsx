@@ -1,4 +1,4 @@
-export default function PriceParams(params) {
+export default function PriceParams() {
     return (
         <div className="params">
             <p className='text-center'>

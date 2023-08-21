@@ -1,15 +1,19 @@
-
-import Link from 'next/link'
 import Item from './items/Item.jsx'
-export default function Categories(params) {
+async function getCats() {
+    let res = await fetch("http://localhost:3000/api/categories")
+    return res.json()
+}
+export default async function Categories() {
+    const categories = await getCats()
+    console.log(categories);
     return (
         <>
             <h1 className="text-center text-2xl font-bold mt-12">Category</h1>
             <ul className='mt-4'>
-                <Item text="Electronics" />
-                <Item text="Sport" />
-                <Item text="Fashion" />
-                <Item text="Decor" />
+                {categories.map((category => (
+                    <Item key={category.id_cat} text={category.name} />
+                )))}
+
 
 
             </ul>

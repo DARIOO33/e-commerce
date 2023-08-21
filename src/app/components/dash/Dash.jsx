@@ -1,7 +1,7 @@
 import './dashboard.css'
 import PriceParams from './PriceParams.jsx'
 import Categories from './Categories.jsx'
-export default function Dash(params) {
+export default function Dash() {
     return (
         <>
             <div className="dash w-1/3">
