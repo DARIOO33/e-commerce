@@ -1,6 +1,6 @@
 import Card from "./card"
 async function getProducts() {
-    const res = await fetch('http://localhost:3000/api/products', { cache: 'no-store' })
+    const res = await fetch('http://localhost:3000/api/products')
     return res.json()
 }
 export default async function Page() {
